@@ -1,0 +1,17 @@
+@import './null.scss';
+// @import '../components/Home/home.scss'
+body{
+ overflow-x: hidden;
+}
+ .wrapper{
+     width: 1600px;
+     min-height: 100vh;
+     margin:0px auto;
+     display: flex;
+
+ }
+ .main{
+     border: 1px solid black;
+     flex: 1 1 100%;
+    //  padding: 25px 0px;
+ }
