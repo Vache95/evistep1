@@ -5,9 +5,6 @@ import { Profile,Login } from './pages'
 export default function App() {
   return (
     <div className='wrapper'>
-      <Routes>
-           <Route path='/' element={<Header/>}/>
-      </Routes>
       <main className='main'>
         <Routes>
           <Route path='/' element={<Home/>}/>
