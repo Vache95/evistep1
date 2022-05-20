@@ -1,3 +1,30 @@
+.login{
+    display: flex;
+   }
+   .login__left-content{
+       padding: 196px 0px 0px 0px;
+   }
+   .login__left{
+     width: 800px;
+     height: 900px;
+     background-color: #F5F6F7;;
+   }
+   .login__left-h2{
+       font-family: 'Montserrat';
+       font-weight: 900;
+       font-size: 40px;
+       text-align: center;
+       text-transform: uppercase;
+       color: #003367;
+       margin-bottom: 47px;
+   }
+   .login__left-img{
+       width: 598px;
+       height: 455px;
+       margin: 0px auto;
+       margin-bottom: 170px;
+   }
+   
 .login__right{
     width: 800px;
     height: 900px;
@@ -7,6 +34,9 @@
 .login__right-content{
     height: 400px;
     padding: 0px 0px 0px 115px;
+    input{
+        font-size: 16px;
+    }
 }
 .login__right-h3{
     font-style: normal;
@@ -50,7 +80,8 @@
     display: flex;
     & :not(:last-child){
         margin-right: 12px;
-    }
+    } 
+    
         input{
         width: 46px;
         height: 100%;
@@ -58,6 +89,17 @@
         text-align: center;
         margin-bottom: 9px;
         }
+        .act{
+            border-bottom: 2px solid red; 
+        }
+        & input:focus{
+            border-bottom: 2px solid blue;
+        }
+        input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
         
       
     
@@ -70,11 +112,11 @@
     button{
         background: none;
         width: 117px;
-height: 36px;
-left: calc(50% - 117px/2 + 426.5px);
-top: calc(50% - 36px/2 + 35px);
-background: #003367;
-border-radius: 4px;
-color: #fff;
+        height: 36px;
+        left: calc(50% - 117px/2 + 426.5px);
+        top: calc(50% - 36px/2 + 35px);
+        background: #003367;
+        border-radius: 4px;
+        color: #fff;
     }
 }

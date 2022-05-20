@@ -1,28 +1,16 @@
 import React from 'react'
-import './login.scss'
-import Logimg from '../../assets/images/Login/image 1 (1).png'
-import LoginEmail from '../Login-email/LoginEmail'
-import LoginCode from '../Login-code/LoginCode'
- import { Link } from 'react-router-dom'
-export default function Login() {
-    return (
-        <section className='login' >
-            <div className="login__left">
-                <div className="login__left-content">
-                    <Link to="/">
-                        <h2 className="login__left-h2">
-                            Playground
-                        </h2>
-                    </Link>
-                    <div className="login__left-img">
-                        <img src={Logimg} alt="" />
-                    </div>
-                </div>
-            </div>
-
-            {/* <LoginEmail/> */}
-            <LoginCode />
-
-        </section>
-    )
+import LeftSide from '../../components/LeftSide/LeftSide'
+import LoginCode from './components/Login-code/LoginCode'
+import LoginEmail from './components/Login-email/LoginEmail'
+import { useSelector } from 'react-redux'
+export default function () {
+  const email = useSelector(state=>state.loginemail.email)
+  return (
+    <>
+    <LeftSide/>
+    {
+     email ? <LoginCode /> : <LoginEmail/>
+    }
+    </>
+  )
 }

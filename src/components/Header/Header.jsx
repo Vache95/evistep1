@@ -1,8 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './header.scss'
 import Gen from '../../assets/images/Header/Patient_24px.svg'
 import Log from '../../assets/images/Header/Schedule_24px.svg'
-import { NavLink } from 'react-router-dom'
+
+
 export default function Header() {
   return (
     <header className='header'>

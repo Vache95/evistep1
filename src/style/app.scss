@@ -1,4 +1,4 @@
-@import './null.scss';
+@import './zeroingdefultStyle';
 @import './_variabls.scss';
 // @import '../components/Home/home.scss'
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;500&display=swap');
@@ -8,14 +8,15 @@ body{
  font-family: 'Roboto', sans-serif;
 }
  .wrapper{
-     width: 1600px;
+     min-width:100vh;
      min-height: 100vh;
      margin:0px auto;
      display: flex;
 
  }
  .main{
-     border: 1px solid black;
+    //  border: 1px solid black;
      flex: 1 1 100%;
+     display: flex;
     //  padding: 25px 0px;
  }

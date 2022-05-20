@@ -1,10 +1,9 @@
 .profile{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 [class*="__container"] {
-    border:1px solid black;
     width: 100%;
 }
 .profile__container{
@@ -18,13 +17,14 @@
     margin-bottom: 16px;
 }
 .profile__top{
-    max-width: 1480px;
+    max-width: 100%;
     background: #FFFFFF;
     border: 1px solid #EBEEEF;
     border-radius: 4px;
     margin-bottom: 20px;
     padding: 25px 20px 24px 20px;
     display: flex;
+    justify-content: space-between;
 
 }
 .profile__top-left{
@@ -41,12 +41,17 @@
         margin-right: 20px;
     }
 }
+
 .form3__top{
+    display: flex;
     margin-bottom: 41px;
    & :nth-child(1),
    & :nth-child(2),
    & :nth-child(3){
      width: 223px;
+   }
+   & :nth-child(3){
+       height: 50px;
    }
 }
 .form3__middle{
@@ -54,19 +59,69 @@
     & :nth-child(1),
     & :nth-child(2),
     & :nth-child(3){
-      width: 345px!important;
+      width: 300px!important;
     }   
+}
+.form3__bottom-chekbox{
+ display: flex;
+ padding-top: 20px;
 }
 .form3__bottom{
-    & :nth-child(1),
-    & :nth-child(2),
-    & :nth-child(3){
+    display: flex;
+    &>:nth-child(1),
+    &>:nth-child(2),
+    &>:nth-child(3){
       width: 223px;
-    }   
+    }  
+    & :nth-child(3){
+        height: 50px;
+    } 
+    &>:nth-child(2){
+        width: 108px;
+    }
 }
 .profile__top-right{
-   border-left: 1px solid #EBEEEF;;
+   border-left: 1px solid #EBEEEF;
    padding-left: 20px;
+  
+}
+.form4__slack-img,
+.form4__github-img{
+   position: absolute;
+   top: 2px;
+   left: -1px;
+}
+.form4__slack{
+    position: relative;
+    margin-bottom: 55px;
+    &:first-child{
+       height: 40px;
+  }
+  &>:nth-child(2){
+      input{
+          padding-left: 30px;
+          padding-bottom:5px;
+          &::placeholder{
+              font-size: 10px;
+          }
+      }
+  }
+} 
+.form4__github{
+    position: relative;
+ 
+    &:first-child{
+        height: 100%;  
+       }
+       &>:nth-child(2){
+        input{
+            padding-left: 30px;
+            padding-bottom:5px;
+            &::placeholder{
+                font-size: 10px;
+            }
+        }
+    }
 }
 .profile__top-right-h3{
     font-style: normal;
@@ -74,14 +129,15 @@
     font-size: 16px;
     line-height: 32px;
     color: #003367;
+    margin-bottom: 17px;
 }
 .profile__bottom{
-    max-width: 1480px;   
-    height: 285px;
+    max-width: 100%;   
     background: #FFFFFF;
     border: 1px solid #EBEEEF;
     border-radius: 4px;
     padding: 25px 20px 24px 20px;
+    margin-bottom: 247px;
 }
 .profile__top-bottom-h3{
     font-style: normal;
@@ -89,4 +145,51 @@
     font-size: 20px;
     color: #003367;
     margin-bottom: 18px;
+}
+.form4{
+ width: 180px;
+
+}
+.profile__bottom1-item,
+.profile__bottom2-item,
+.profile__bottom3-item,
+.profile__bottom4-item,
+.profile__bottom5-item,
+.profile__bottom6-item{
+ width: 100%;
+ margin-top: 12px;
+ display: flex;
+ position: relative;
+
+ span{
+     font-family: Arial, Helvetica, sans-serif;
+     position: absolute;
+     color: gray;
+     right: 40px;
+     top: 19px;
+     cursor: pointer;
+ }
+}
+.profile__bottom1-span{
+    display: block;
+    width: 100%;
+    background-color: #F5F6F7;
+    border-radius: 4px;
+    height: 32px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #95A2A7;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.profile__bottom1{
+   
+}
+.profile__bottom-content{
+    display: flex;
+    &>:not(:last-child){
+               margin-right: 20px;
+           }
 }

@@ -1,17 +1,11 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import { Header,Home } from './components'
-import { Profile,Login } from './pages'
+import React, { useState } from 'react'
+import Router from './router/Router'
 export default function App() {
   return (
     <div className='wrapper'>
-      <main className='main'>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/profile' element={<Profile/>}/>
-          <Route path='/login' element={<Login/>}/>
-        </Routes>
-      </main>
+        <main className='main'> 
+              <Router/>
+        </main>
     </div>
   )
 }
